@@ -10,13 +10,17 @@ const FeaturedProducts = ({products}) => {
             <div className="row">
              
             {products.map(
-                product => {
+                product => { if (product.featured === true ){
                     return(
                         <div className="col-xs-6 col-sm-3">     
                 <Product id={product.id} image={product.image} title={product.title} />
                         </div>
-                    );}
-            )}
+                    );} else {
+                        return(
+                        <div></div>
+                        );
+                    }
+            }) }
             </div>
             </div>
        

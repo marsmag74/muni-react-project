@@ -117,8 +117,8 @@ export const PRODUCTS = [
     },
     {
         id: 8,
-        image: "/assets/images/dounut.jpg",
-        title: "Luxury cake",
+        image: "/assets/images/donuts.jpg",
+        title: "Donuts sorted",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
         featured: false,
         categories:
