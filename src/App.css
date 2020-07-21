@@ -7,7 +7,7 @@
 }
 .carousel-item > img { 
   width: 100vw;
-  height: 450px;
+  height: auto;
   padding-bottom: 2rem;
 }
 
@@ -27,7 +27,3 @@
   font-size: 1.2rem;
 }
 
-/*.product-image{
-  width: 200px;
-  height: auto;
-} */

@@ -2,7 +2,7 @@ import React from 'react';
 import {
     Card,
     CardImg,
-    CardText,
+    
     CardBody,
     CardTitle
 } from 'reactstrap';
@@ -16,7 +16,7 @@ const Product = ({ id,image, title, description }) => {
                     <CardImg className="product-image" variant=" top" src={image} alt="Product" />
                     <CardBody>
                         <CardTitle>{title}</CardTitle>
-                        <CardText>{description}</CardText>
+                       
                     </CardBody>
                 </Card>
 
