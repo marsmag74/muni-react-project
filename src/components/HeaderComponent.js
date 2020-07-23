@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import {  Navbar, Nav, NavbarToggler, Collapse, NavItem,
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label, } from 'reactstrap';
+    import { NavLink } from 'react-router-dom'
 
 
 
@@ -74,7 +75,7 @@ render() {
 }
 */
 
-class MenuPage extends Component {
+class Header extends Component {
     constructor(props) {
         super(props);
         this.toggleNav = this.toggleNav.bind(this);
@@ -110,34 +111,34 @@ class MenuPage extends Component {
                        <Nav navbar>
                            
                                <NavItem>
-                                   <a className="nav-link" to="/home">
+                                   <NavLink className="nav-link" to="/home">
                                      Home
-                                   </a>
+                                   </NavLink>
                                </NavItem>
                                <NavItem>
-                                   <a className="nav-link" to="/bakery">
+                                   <NavLink className="nav-link" to="/bakery">
                                       Bakery
-                                   </a>
+                                   </NavLink>
                                </NavItem>
                                <NavItem>
-                                   <a className="nav-link" to="/bread">
+                                   <NavLink className="nav-link" to="/bread">
                                      Bread
-                                   </a>
+                                   </NavLink>
                                </NavItem>
                                <NavItem>
-                                   <a className="nav-link" to="/jamsandpreserves">
+                                   <NavLink className="nav-link" to="/jamsandpreserves">
                                       Jams 	&amp; Preserves
-                                   </a>
+                                   </NavLink>
                                </NavItem>
                                <NavItem>
-                                   <a className="nav-link" to="/crafts">
+                                   <NavLink className="nav-link" to="/crafts">
                                      Crafts
-                                   </a>
+                                   </NavLink>
                                </NavItem>
                                <NavItem>
-                                   <a className="nav-link" to="/signin">
+                                   <NavLink className="nav-link" to="/signin">
                                       Sign In
-                                   </a>
+                                   </NavLink>
                                </NavItem>
                            </Nav>
                        </Collapse>
@@ -180,7 +181,7 @@ class MenuPage extends Component {
    class MenuComponent extends Component {
        render(){
            return(
-               <MenuPage />
+               <Header />
            );
        }
    }

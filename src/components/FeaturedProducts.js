@@ -3,7 +3,6 @@ import Product from './ProductComponent';
 
 
 
-
 const FeaturedProducts = ({products}) => {
     return(
         <div className="container my-5">
@@ -12,7 +11,7 @@ const FeaturedProducts = ({products}) => {
             {products.map(
                 product => { if (product.featured === true ){
                     return(
-                        <div className="col-xs-6 col-sm-3">     
+                        <div className="col-6 col-sm-3 ">     
                 <Product id={product.id} image={product.image} title={product.title} />
                         </div>
                     );} else {
