@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponents';
-import Search  from './components/SearchBar'
-import HomeCarousel from './components/CarouselComponent';
-import FeaturedProduct from './components/FeaturedProducts';
+import Search  from './SearchBar'
+import HomeCarousel from './CarouselComponent';
+import FeaturedProduct from './FeaturedProducts';
 import { PRODUCTS } from '../shared/products';
+
 
 class HomeComponent extends Component {
 
@@ -11,10 +11,9 @@ render(){
     return(
         
         <React.Fragment>
-         <Header />
          <HomeCarousel />
          <Search />
-         <FeaturedProduct products= {PRODUCTS}/>
+         <FeaturedProduct products={ PRODUCTS }/>
         </React.Fragment>
 
 

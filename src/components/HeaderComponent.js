@@ -79,9 +79,12 @@ class Header extends Component {
     constructor(props) {
         super(props);
         this.toggleNav = this.toggleNav.bind(this);
+        this.toggleModal= this.toggleModal.bind(this);
+        this.handleLogin= this.handleLogin.bind(this);
         this.state = {
             isSignIn: false,
-            isNavOpen: false
+            isNavOpen: false,
+            isModelOpen: false
         }
    
     }
@@ -93,6 +96,16 @@ class Header extends Component {
    
        });
    }
+   toggleModal(){
+    this.setState({
+        isModalOpen: !this.state.isModelOpen
+    });
+}
+handleLogin(event) {
+    alert(`Username: ${this.username.value} Password: ${this.password.value} Remember: ${this.remember.checked}`);
+    this.toggleModal();
+    event.preventDefault();
+}
    
    render() {
        return (
@@ -135,12 +148,13 @@ class Header extends Component {
                                      Crafts
                                    </NavLink>
                                </NavItem>
-                               <NavItem>
-                                   <NavLink className="nav-link" to="/signin">
-                                      Sign In
-                                   </NavLink>
-                               </NavItem>
+                            
                            </Nav>
+                           <span className="navbar-text ">
+                                <Button outline onClick={this.toggleModal}>
+                                    Login
+                                </Button>
+                            </span>
                        </Collapse>
                    
                </Navbar>
